@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Facebook, Instagram, Menu, X } from "lucide-react";
+import { Facebook, Instagram, Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
+import { useTheme } from "./ThemeProvider";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
