@@ -48,7 +48,7 @@ const Navbar = () => {
           >
             <div className="container mx-auto px-4 py-2 flex justify-between items-center">
               <span className="text-sm font-orbitron font-semibold text-metallic">
-                Pinnacle Auto Spa
+                Detailers Pro
               </span>
               <div className="flex gap-4">
                 <a
