@@ -30,8 +30,9 @@ const Navbar = () => {
     { label: "Home", id: "hero" },
     { label: "About", id: "about" },
     { label: "Services", id: "services" },
-    { label: "Gallery", id: "gallery" },
     { label: "Pricing", id: "pricing" },
+    { label: "Gallery", id: "gallery" },
+    { label: "Reviews", id: "testimonials" },
     { label: "Contact", id: "contact" },
   ];
 
