@@ -77,7 +77,7 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-4">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-4">
             Customer Reviews
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -121,7 +121,7 @@ const Testimonials = () => {
                       <Star
                         key={i}
                         size={20}
-                        className="text-metallic fill-metallic"
+                        className="dark:text-white dark:fill-white text-black fill-black"
                       />
                     ))}
                   </div>
@@ -133,7 +133,7 @@ const Testimonials = () => {
 
                   {/* Author Info */}
                   <div>
-                    <p className="font-orbitron font-bold text-metallic text-lg">
+                    <p className="font-orbitron font-bold dark:text-white text-black text-base">
                       {currentTestimonial.name}
                     </p>
                     <p className="text-muted-foreground text-sm">
@@ -163,8 +163,8 @@ const Testimonials = () => {
                   onClick={() => setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     index === currentIndex
-                      ? "bg-metallic w-8"
-                      : "bg-metallic/30 hover:bg-metallic/50"
+                      ? "dark:bg-white bg-black w-8"
+                  : "dark:bg-gray-700 bg-gray-300 dark:hover:bg-gray-600 hover:bg-gray-400"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
