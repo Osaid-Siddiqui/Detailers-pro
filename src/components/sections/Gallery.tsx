@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ExternalLink } from "lucide-react";
-import { useEffect } from "react";
 
 const Gallery = () => {
   const [ref, inView] = useInView({
@@ -9,20 +7,32 @@ const Gallery = () => {
     threshold: 0.1,
   });
 
-  const posts = [
-    "https://www.facebook.com/photo/?fbid=122141562626941919&set=pcb.122141562668941919",
-    "https://www.facebook.com/photo/?fbid=122141113556941919&set=a.122109188012941919",
-    "https://www.facebook.com/reel/1167896691895352",
-    "https://www.facebook.com/photo?fbid=122135314550941919&set=pcb.122135314652941919",
-    "https://www.facebook.com/photo?fbid=122133194036941919&set=pcb.122133194222941919",
-    "https://www.facebook.com/photo/?fbid=122129711576941919&set=a.122109188012941919",
+  const galleryImages = [
+    {
+      url: "https://images.unsplash.com/photo-1517521791897-0c3688726fe2?w=500&h=400&fit=crop",
+      alt: "Professional Car Detailing",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=400&fit=crop",
+      alt: "Car Wash Service",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=500&h=400&fit=crop",
+      alt: "Vehicle Detailing",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1494976866556-6812c3fb0c4f?w=500&h=400&fit=crop",
+      alt: "Car Paint Protection",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1486432690212-cd0a52efb14f?w=500&h=400&fit=crop",
+      alt: "Interior Car Cleaning",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1552830820-6eac92e65b10?w=500&h=400&fit=crop",
+      alt: "Professional Car Polishing",
+    },
   ];
-
-  useEffect(() => {
-    if (window.FB && window.FB.XFBML) {
-      window.FB.XFBML.parse();
-    }
-  }, []);
 
   return (
     <section id="gallery" className="py-20 bg-background">
