@@ -45,16 +45,23 @@ const Pricing = () => {
     ],
   };
 
-  const addOns = [
-    { name: "Headlight Restoration", price: "$50" },
-    { name: "Engine Bay Detail", price: "$45" },
-    { name: "Trim Restoration", price: "$30" },
-    { name: "Pet Hair Removal", price: "$50" },
-    { name: "Leather Conditioning", price: "$10–$30" },
-    { name: "Stain Removal/Extraction", price: "$30–$60" },
-    { name: "Clay Bar", price: "$50–$75" },
-    { name: "Wax", price: "$30–$50" },
-  ];
+  const ceramicCoatingPackage = {
+    title: "Ceramic Coating Package",
+    prices: [
+      { type: "Coupes", price: "$399" },
+      { type: "SUVs", price: "$449" },
+      { type: "Trucks (3+ Rows)", price: "$499" },
+    ],
+    features: [
+      "Full Premium Package",
+      "Professional Ceramic Coating",
+      "Paint Protection Warranty",
+      "Enhanced UV Protection",
+      "Water Beading & Hydrophobic",
+      "Long-Lasting Shine",
+      "Professional Application",
+    ],
+  };
 
   return (
     <section id="pricing" className="py-20 bg-card">
