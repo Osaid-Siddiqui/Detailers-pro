@@ -43,7 +43,7 @@ const Gallery = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-4">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-4">
             Our Work
           </h2>
           <p className="text-muted-foreground text-lg">
