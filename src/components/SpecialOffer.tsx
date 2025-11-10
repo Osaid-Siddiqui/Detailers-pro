@@ -31,14 +31,11 @@ const SpecialOffer = () => {
           exit={{ opacity: 0, x: 100 }}
           className="fixed bottom-8 right-8 z-50 max-w-sm"
         >
-          <div className="bg-card border-2 border-metallic rounded-lg shadow-[0_0_40px_rgba(192,192,192,0.4)] p-6 relative overflow-hidden">
-            {/* Glow Effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-metallic/20 to-transparent animate-shine" />
-
+          <div className="dark:bg-gray-900 bg-white dark:border-2 dark:border-white border-2 border-black rounded-lg shadow-lg p-6 relative overflow-hidden">
             {/* Close Button */}
             <button
               onClick={() => setIsVisible(false)}
-              className="absolute top-2 right-2 text-muted-foreground hover:text-foreground transition-colors"
+              className="absolute top-2 right-2 dark:text-gray-400 dark:hover:text-white text-gray-600 hover:text-black transition-colors"
             >
               <X size={20} />
             </button>
@@ -46,19 +43,19 @@ const SpecialOffer = () => {
             {/* Content */}
             <div className="relative z-10">
               <div className="flex items-center gap-2 mb-3">
-                <Sparkles className="text-metallic" size={24} />
-                <h3 className="font-orbitron font-bold text-lg text-metallic">
+                <Sparkles className="dark:text-white text-black" size={24} />
+                <h3 className="font-orbitron font-bold text-base dark:text-white text-black">
                   Limited Offer
                 </h3>
               </div>
 
-              <p className="text-foreground mb-4">
-                💎 Get <span className="font-bold text-metallic">10% Off</span> Your First Detail
+              <p className="dark:text-white text-black mb-4">
+                💎 Get <span className="font-bold dark:text-white text-black">10% Off</span> Your First Detail
               </p>
 
               <Button
                 onClick={scrollToContact}
-                className="w-full bg-metallic text-primary-foreground hover:bg-metallic/90 font-orbitron"
+                className="w-full dark:bg-white dark:text-black dark:hover:bg-gray-200 bg-black text-white hover:bg-gray-800 font-orbitron"
               >
                 Book Now
               </Button>
