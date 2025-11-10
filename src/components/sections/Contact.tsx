@@ -63,9 +63,9 @@ const Contact = () => {
               <div className="space-y-6">
                 <a
                   href="tel:+15627468437"
-                  className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-metallic transition-all duration-300 group"
+                  className="flex items-center gap-4 p-4 dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 group rounded-lg"
                 >
-                  <Phone className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
+                  <Phone className="w-6 h-6 dark:text-white text-black group-hover:scale-110 transition-transform" />
                   <div>
                     <p className="text-sm text-muted-foreground">Call Us</p>
                     <p className="text-lg font-medium text-foreground">(562) 746-8437</p>
@@ -74,9 +74,9 @@ const Contact = () => {
 
                 <a
                   href="tel:+13107209427"
-                  className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-metallic transition-all duration-300 group"
+                  className="flex items-center gap-4 p-4 dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 group rounded-lg"
                 >
-                  <Phone className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
+                  <Phone className="w-6 h-6 dark:text-white text-black group-hover:scale-110 transition-transform" />
                   <div>
                     <p className="text-sm text-muted-foreground">Alternative</p>
                     <p className="text-lg font-medium text-foreground">(310) 720-9427</p>
@@ -84,7 +84,7 @@ const Contact = () => {
                 </a>
               </div>
 
-              <div className="mt-6 p-6 bg-card rounded-lg border border-border space-y-4">
+              <div className="mt-6 p-6 dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 rounded-lg space-y-4">
                 <div>
                   <h4 className="font-orbitron font-semibold dark:text-white text-black mb-2">
                     Address
