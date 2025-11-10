@@ -8,6 +8,7 @@ import Services from "@/components/sections/Services";
 import Pricing from "@/components/sections/Pricing";
 import Gallery from "@/components/sections/Gallery";
 import Areas from "@/components/sections/Areas";
+import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import BackToTop from "@/components/BackToTop";
@@ -31,6 +32,7 @@ const Index = () => {
           <Pricing />
           <Gallery />
           <Areas />
+          <Testimonials />
           <Contact />
           <Footer />
           <BackToTop />

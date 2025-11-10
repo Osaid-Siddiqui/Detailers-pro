@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ExternalLink } from "lucide-react";
-import { useEffect } from "react";
 
 const Gallery = () => {
   const [ref, inView] = useInView({
@@ -9,20 +7,32 @@ const Gallery = () => {
     threshold: 0.1,
   });
 
-  const posts = [
-    "https://www.facebook.com/photo/?fbid=122141562626941919&set=pcb.122141562668941919",
-    "https://www.facebook.com/photo/?fbid=122141113556941919&set=a.122109188012941919",
-    "https://www.facebook.com/reel/1167896691895352",
-    "https://www.facebook.com/photo?fbid=122135314550941919&set=pcb.122135314652941919",
-    "https://www.facebook.com/photo?fbid=122133194036941919&set=pcb.122133194222941919",
-    "https://www.facebook.com/photo/?fbid=122129711576941919&set=a.122109188012941919",
+  const galleryImages = [
+    {
+      url: "https://images.unsplash.com/photo-1517521791897-0c3688726fe2?w=500&h=400&fit=crop",
+      alt: "Professional Car Detailing",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=400&fit=crop",
+      alt: "Car Wash Service",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=500&h=400&fit=crop",
+      alt: "Vehicle Detailing",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1494976866556-6812c3fb0c4f?w=500&h=400&fit=crop",
+      alt: "Car Paint Protection",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1486432690212-cd0a52efb14f?w=500&h=400&fit=crop",
+      alt: "Interior Car Cleaning",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1552830820-6eac92e65b10?w=500&h=400&fit=crop",
+      alt: "Professional Car Polishing",
+    },
   ];
-
-  useEffect(() => {
-    if (window.FB && window.FB.XFBML) {
-      window.FB.XFBML.parse();
-    }
-  }, []);
 
   return (
     <section id="gallery" className="py-20 bg-background">
@@ -42,45 +52,25 @@ const Gallery = () => {
         </motion.div>
 
         <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map((url, index) => (
+          {galleryImages.map((image, index) => (
             <motion.div
-              key={url}
+              key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="rounded-lg overflow-hidden bg-card border border-border hover:border-metallic transition-all duration-300 fb-embed-container flex flex-col items-center justify-center min-h-[400px]"
+              className="rounded-lg overflow-hidden bg-card border border-border hover:border-metallic transition-all duration-300 group"
             >
-              <iframe
-                src={`https://www.facebook.com/plugins/post.php?href=${encodeURIComponent(url)}&width=500&show_text=false`}
-                width="500"
-                height="400"
-                className="w-full border-none overflow-hidden rounded-lg"
-                title={`Facebook Post ${index + 1}`}
-                scrolling="no"
-                frameBorder="0"
-                allowFullScreen={true}
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              />
+              <div className="relative h-80 overflow-hidden">
+                <img
+                  src={image.url}
+                  alt={image.alt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center mt-12"
-        >
-          <a
-            href="https://www.facebook.com/profile.php?id=61570825486919"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-metallic hover:text-metallic/80 font-medium transition-colors"
-          >
-            View More on Facebook
-            <ExternalLink size={16} />
-          </a>
-        </motion.div>
       </div>
     </section>
   );

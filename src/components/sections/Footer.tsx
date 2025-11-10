@@ -15,9 +15,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Pinnacle Auto Spa" className="h-16 w-auto mb-4" />
+            <img src={logo} alt="Detailers Pro" className="h-16 w-auto mb-4" />
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Premium mobile car wash and detailing services in Trinity, NC. We bring luxury
+              Premium mobile car detailing services in Torrance, CA. We bring luxury
               detailing directly to your driveway.
             </p>
           </div>
@@ -28,15 +28,15 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li className="flex justify-between">
                 <span>Monday - Friday</span>
-                <span className="text-foreground">8 AM - 6 PM</span>
+                <span className="text-foreground">7 AM - 7 PM</span>
               </li>
               <li className="flex justify-between">
                 <span>Saturday</span>
-                <span className="text-foreground">9 AM - 5 PM</span>
+                <span className="text-foreground">8 AM - 6 PM</span>
               </li>
               <li className="flex justify-between">
                 <span>Sunday</span>
-                <span className="text-foreground">Closed</span>
+                <span className="text-foreground">9 AM - 5 PM</span>
               </li>
             </ul>
           </div>
@@ -103,19 +103,19 @@ const Footer = () => {
               <li>
                 <p className="font-semibold text-foreground">Phone</p>
                 <a
-                  href="tel:336-314-3340"
+                  href="tel:1-800-DETAILERS"
                   className="hover:text-metallic transition-colors"
                 >
-                  336-314-3340
+                  (855) 338-2547
                 </a>
               </li>
               <li>
                 <p className="font-semibold text-foreground">Email</p>
                 <a
-                  href="mailto:pinnacleautospa@gmail.com"
+                  href="mailto:info@detailerspro.com"
                   className="hover:text-metallic transition-colors break-all"
                 >
-                  pinnacleautospa@gmail.com
+                  info@detailerspro.com
                 </a>
               </li>
               <li>
@@ -157,7 +157,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-border pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Pinnacle Auto Spa. All rights reserved.
+            © {new Date().getFullYear()} Detailers Pro. All rights reserved.
           </p>
         </div>
       </div>

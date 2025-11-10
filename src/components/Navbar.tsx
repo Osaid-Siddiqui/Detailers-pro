@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Facebook, Instagram, Menu, X } from "lucide-react";
+import { Facebook, Instagram, Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
+import { useTheme } from "./ThemeProvider";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,8 +30,9 @@ const Navbar = () => {
     { label: "Home", id: "hero" },
     { label: "About", id: "about" },
     { label: "Services", id: "services" },
-    { label: "Gallery", id: "gallery" },
     { label: "Pricing", id: "pricing" },
+    { label: "Gallery", id: "gallery" },
+    { label: "Reviews", id: "testimonials" },
     { label: "Contact", id: "contact" },
   ];
 
@@ -45,7 +48,7 @@ const Navbar = () => {
           >
             <div className="container mx-auto px-4 py-2 flex justify-between items-center">
               <span className="text-sm font-orbitron font-semibold text-metallic">
-                Pinnacle Auto Spa
+                Detailers Pro
               </span>
               <div className="flex gap-4">
                 <a
@@ -82,14 +85,14 @@ const Navbar = () => {
 
       {/* Main Navigation */}
       <div
-        className={`bg-card/95 backdrop-blur-md border-b border-border transition-all duration-300 ${
+        className={`bg-card/85 backdrop-blur-xl border-b border-border/50 transition-all duration-300 ${
           isScrolled ? "shadow-lg" : ""
         }`}
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo */}
           <button onClick={() => scrollToSection("hero")} className="flex items-center gap-3">
-            <img src={logo} alt="Pinnacle Auto Spa" className="h-16 w-auto" />
+            <img src={logo} alt="Detailers Pro" className="h-16 w-auto" />
           </button>
 
           {/* Desktop Navigation */}
@@ -106,15 +109,26 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X /> : <Menu />}
-          </Button>
+          {/* Theme Toggle and Mobile Menu Button */}
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              className="text-metallic hover:bg-metallic/10"
+              title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            >
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X /> : <Menu />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
