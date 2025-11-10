@@ -39,7 +39,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-4">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-4">
             Get In Touch
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -86,7 +86,7 @@ const Contact = () => {
 
               <div className="mt-6 p-6 bg-card rounded-lg border border-border space-y-4">
                 <div>
-                  <h4 className="font-orbitron font-semibold text-metallic mb-2">
+                  <h4 className="font-orbitron font-semibold dark:text-white text-black mb-2">
                     Address
                   </h4>
                   <p className="text-muted-foreground">
@@ -123,7 +123,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="bg-card border-border focus:border-metallic"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:placeholder-gray-500 dark:focus:border-white bg-white border-gray-300 text-black placeholder-gray-500 focus:border-black"
                 />
               </div>
 
@@ -134,7 +134,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
-                  className="bg-card border-border focus:border-metallic"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:focus:border-white bg-white border-gray-300 focus:border-black"
                 />
               </div>
 
@@ -144,7 +144,7 @@ const Contact = () => {
                   value={formData.carType}
                   onChange={(e) => setFormData({ ...formData, carType: e.target.value })}
                   required
-                  className="bg-card border-border focus:border-metallic"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:focus:border-white bg-white border-gray-300 focus:border-black"
                 />
               </div>
 
@@ -154,7 +154,7 @@ const Contact = () => {
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   required
-                  className="bg-card border-border focus:border-metallic"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:focus:border-white bg-white border-gray-300 focus:border-black"
                 />
               </div>
 
@@ -164,14 +164,14 @@ const Contact = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
-                  className="bg-card border-border focus:border-metallic resize-none"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:placeholder-gray-500 dark:focus:border-white bg-white border-gray-300 text-black placeholder-gray-500 focus:border-black resize-none"
                 />
               </div>
 
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-metallic text-primary-foreground hover:bg-metallic/90 font-orbitron"
+                className="w-full dark:bg-white dark:text-black dark:hover:bg-gray-200 bg-black text-white hover:bg-gray-800 font-orbitron"
               >
                 Send Message
               </Button>
