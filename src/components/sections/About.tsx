@@ -35,7 +35,7 @@ const About = () => {
                 <img
                   src={aboutImage}
                   alt="Premium Car Detailing"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-72 object-cover"
                 />
                 
                 {/* 100% Guarantee Badge */}
