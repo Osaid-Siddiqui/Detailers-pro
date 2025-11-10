@@ -85,7 +85,7 @@ const Navbar = () => {
 
       {/* Main Navigation */}
       <div
-        className={`bg-card/95 backdrop-blur-md border-b border-border transition-all duration-300 ${
+        className={`bg-card/85 backdrop-blur-xl border-b border-border/50 transition-all duration-300 ${
           isScrolled ? "shadow-lg" : ""
         }`}
       >
