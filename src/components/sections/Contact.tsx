@@ -59,41 +59,54 @@ const Contact = () => {
               <h3 className="text-2xl font-orbitron font-bold text-foreground mb-6">
                 Contact Information
               </h3>
-              
+
               <div className="space-y-6">
                 <a
-                  href="tel:336-314-3340"
+                  href="tel:1-800-DETAILERS"
                   className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-metallic transition-all duration-300 group"
                 >
                   <Phone className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
                   <div>
                     <p className="text-sm text-muted-foreground">Call Us</p>
-                    <p className="text-lg font-medium text-foreground">336-314-3340</p>
+                    <p className="text-lg font-medium text-foreground">(855) 338-2547 / (310) 555-0123</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:pinnacleautospa@gmail.com"
+                  href="mailto:info@detailerspro.com"
                   className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-metallic transition-all duration-300 group"
                 >
                   <Mail className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
                   <div>
-                    <p className="text-sm text-muted-foreground">Email Us</p>
+                    <p className="text-sm text-muted-foreground">Email</p>
                     <p className="text-lg font-medium text-foreground break-all">
-                      pinnacleautospa@gmail.com
+                      info@detailerspro.com
                     </p>
                   </div>
                 </a>
               </div>
+
+              <div className="mt-6 p-6 bg-card rounded-lg border border-border space-y-4">
+                <div>
+                  <h4 className="font-orbitron font-semibold text-metallic mb-2">
+                    Address
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Torrance, CA 90504<br/>
+                    Service Area: Greater Los Angeles
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="p-6 bg-card rounded-lg border border-border">
-              <h4 className="font-orbitron font-semibold text-foreground mb-4">
+              <h4 className="font-orbitron font-semibold text-metallic mb-4">
                 Business Hours
               </h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>Monday - Saturday: 8:00 AM - 6:00 PM</p>
-                <p>Sunday: By Appointment</p>
+                <p><span className="text-foreground font-medium">Monday - Friday:</span> 7:00 AM - 7:00 PM</p>
+                <p><span className="text-foreground font-medium">Saturday:</span> 8:00 AM - 6:00 PM</p>
+                <p><span className="text-foreground font-medium">Sunday:</span> 9:00 AM - 5:00 PM</p>
               </div>
             </div>
           </motion.div>
