@@ -25,7 +25,7 @@ const Footer = () => {
 
           {/* Open Hours */}
           <div>
-            <h3 className="font-orbitron font-bold text-metallic mb-4 text-lg">Open Hours</h3>
+            <h3 className="font-orbitron font-bold dark:text-white text-black mb-4 text-sm">Open Hours</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li className="flex justify-between">
                 <span>Monday - Friday</span>
@@ -44,12 +44,12 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-orbitron font-bold text-metallic mb-4 text-lg">Quick Links</h3>
+            <h3 className="font-orbitron font-bold dark:text-white text-black mb-4 text-sm">Quick Links</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
                 <button
                   onClick={() => scrollToSection("hero")}
-                  className="hover:text-metallic transition-colors"
+                  className="dark:hover:text-white text-black hover:text-gray-700 transition-colors"
                 >
                   Home
                 </button>
@@ -57,7 +57,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("about")}
-                  className="hover:text-metallic transition-colors"
+                  className="dark:hover:text-white text-black hover:text-gray-700 transition-colors"
                 >
                   About
                 </button>
@@ -65,7 +65,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("services")}
-                  className="hover:text-metallic transition-colors"
+                  className="dark:hover:text-white text-black hover:text-gray-700 transition-colors"
                 >
                   Services
                 </button>
@@ -73,7 +73,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("pricing")}
-                  className="hover:text-metallic transition-colors"
+                  className="dark:hover:text-white text-black hover:text-gray-700 transition-colors"
                 >
                   Pricing
                 </button>
@@ -81,7 +81,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("gallery")}
-                  className="hover:text-metallic transition-colors"
+                  className="dark:hover:text-white text-black hover:text-gray-700 transition-colors"
                 >
                   Gallery
                 </button>
@@ -89,7 +89,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("contact")}
-                  className="hover:text-metallic transition-colors"
+                  className="dark:hover:text-white text-black hover:text-gray-700 transition-colors"
                 >
                   Contact
                 </button>
@@ -99,13 +99,13 @@ const Footer = () => {
 
           {/* Contact Information */}
           <div>
-            <h3 className="font-orbitron font-bold text-metallic mb-4 text-lg">Contact Us</h3>
+            <h3 className="font-orbitron font-bold dark:text-white text-black mb-4 text-sm">Contact Us</h3>
             <ul className="space-y-3 text-muted-foreground text-sm">
               <li>
                 <p className="font-semibold text-foreground">Primary</p>
                 <a
                   href="tel:+15627468437"
-                  className="hover:text-metallic transition-colors"
+                  className="dark:hover:text-white text-black hover:text-gray-700 transition-colors"
                 >
                   (562) 746-8437
                 </a>
@@ -114,7 +114,7 @@ const Footer = () => {
                 <p className="font-semibold text-foreground">Alternative</p>
                 <a
                   href="tel:+13107209427"
-                  className="hover:text-metallic transition-colors"
+                  className="dark:hover:text-white text-black hover:text-gray-700 transition-colors"
                 >
                   (310) 720-9427
                 </a>
