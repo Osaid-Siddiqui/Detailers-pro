@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Pinnacle Auto Spa Dark Theme - Metallic Silver, Navy Blue, Black */
+    --background: 215 30% 4%;
+    --foreground: 210 15% 92%;
+
+    --card: 215 25% 8%;
+    --card-foreground: 210 15% 92%;
+
+    --popover: 215 30% 6%;
+    --popover-foreground: 210 15% 92%;
+
+    --primary: 210 15% 78%;
+    --primary-foreground: 215 30% 8%;
+
+    --secondary: 215 40% 18%;
+    --secondary-foreground: 210 15% 92%;
+
+    --muted: 215 25% 15%;
+    --muted-foreground: 210 10% 65%;
+
+    --accent: 215 50% 25%;
+    --accent-foreground: 210 15% 92%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 15% 92%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 18%;
+    --ring: 210 15% 78%;
+
+    --radius: 0.5rem;
+
+    /* Custom colors for Pinnacle */
+    --metallic: 210 15% 78%;
+    --navy: 215 50% 25%;
+    --dark-navy: 215 40% 15%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 40% 12%), hsl(215 50% 18%));
+    --gradient-shine: linear-gradient(90deg, transparent, hsl(210 15% 78% / 0.1), transparent);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron;
+  }
+}
+
+@layer utilities {
+  .gradient-metallic {
+    background: linear-gradient(135deg, hsl(215 40% 12%), hsl(215 50% 18%));
+  }
+  
+  .gradient-shine {
+    background: linear-gradient(90deg, transparent, hsl(210 15% 78% / 0.1), transparent);
+  }
+  
+  .text-metallic {
+    color: hsl(210 15% 78%);
+  }
+  
+  .animate-shine {
+    animation: shine 3s ease-in-out infinite;
+  }
+  
+  @keyframes shine {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+}
