@@ -103,19 +103,19 @@ const Footer = () => {
               <li>
                 <p className="font-semibold text-foreground">Phone</p>
                 <a
-                  href="tel:336-314-3340"
+                  href="tel:1-800-DETAILERS"
                   className="hover:text-metallic transition-colors"
                 >
-                  336-314-3340
+                  (855) 338-2547
                 </a>
               </li>
               <li>
                 <p className="font-semibold text-foreground">Email</p>
                 <a
-                  href="mailto:pinnacleautospa@gmail.com"
+                  href="mailto:info@detailerspro.com"
                   className="hover:text-metallic transition-colors break-all"
                 >
-                  pinnacleautospa@gmail.com
+                  info@detailerspro.com
                 </a>
               </li>
               <li>
