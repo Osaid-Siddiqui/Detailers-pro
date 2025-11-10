@@ -9,28 +9,28 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      url: "https://images.unsplash.com/photo-1517521791897-0c3688726fe2?w=500&h=400&fit=crop",
-      alt: "Professional Car Detailing",
+      url: "https://images.pexels.com/photos/10463764/pexels-photo-10463764.jpeg?w=500&h=400&fit=crop",
+      alt: "Professional Ceramic Coating Application",
     },
     {
-      url: "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=400&fit=crop",
-      alt: "Car Wash Service",
+      url: "https://images.pexels.com/photos/6872152/pexels-photo-6872152.jpeg?w=500&h=400&fit=crop",
+      alt: "Luxury Car Detailing",
     },
     {
-      url: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=500&h=400&fit=crop",
-      alt: "Vehicle Detailing",
+      url: "https://images.pexels.com/photos/6872601/pexels-photo-6872601.jpeg?w=500&h=400&fit=crop",
+      alt: "Professional Car Washing",
     },
     {
-      url: "https://images.unsplash.com/photo-1494976866556-6812c3fb0c4f?w=500&h=400&fit=crop",
-      alt: "Car Paint Protection",
+      url: "https://images.pexels.com/photos/6872150/pexels-photo-6872150.jpeg?w=500&h=400&fit=crop",
+      alt: "Exterior Detail and Polish",
     },
     {
-      url: "https://images.unsplash.com/photo-1486432690212-cd0a52efb14f?w=500&h=400&fit=crop",
-      alt: "Interior Car Cleaning",
+      url: "https://images.pexels.com/photos/6873020/pexels-photo-6873020.jpeg?w=500&h=400&fit=crop",
+      alt: "Car Wash Detailing Service",
     },
     {
-      url: "https://images.unsplash.com/photo-1552830820-6eac92e65b10?w=500&h=400&fit=crop",
-      alt: "Professional Car Polishing",
+      url: "https://images.pexels.com/photos/5233268/pexels-photo-5233268.jpeg?w=500&h=400&fit=crop",
+      alt: "Headlight Restoration",
     },
   ];
 
