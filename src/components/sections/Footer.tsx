@@ -1,4 +1,4 @@
-const dpLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='95' fill='none' stroke='%23000' stroke-width='8'/%3E%3Cg fill='%23000'%3E%3Cpath d='M55 75 L55 135 Q55 155 75 155 L85 155 Q105 155 105 135 L105 75 Z M75 95 L85 95 L85 135 Q85 145 75 145 L75 145 Q75 145 75 135 Z'/%3E%3Cpath d='M125 75 L115 75 L115 95 Q115 105 125 105 L135 105 Q145 105 145 95 L145 85 Q145 75 135 75 Z M125 95 L125 85 L135 85 Q135 85 135 95 Q135 105 125 105 L125 105 Q125 105 125 95 Z'/%3E%3C/g%3E%3C/svg%3E";
+const dpLogoUrl = "https://cdn.builder.io/api/v1/image/assets%2F3c98d4ac468a498ea650d71972550e62%2F5fd8916f422049019c94adbfc4e9b266?format=webp&width=100";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -15,8 +15,8 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <img src={dpLogo} alt="Detailer's Pro" className="h-12 w-12" />
-              <h3 className="font-orbitron font-bold text-metallic text-lg">Detailer's Pro</h3>
+              <img src={dpLogoUrl} alt="Detailer's Pro" className="h-10 w-10" />
+              <h3 className="font-orbitron font-bold dark:text-white text-black text-sm">Detailer's Pro</h3>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Premium mobile car detailing, ceramic coating, and paint correction services in Torrance, CA.
