@@ -36,7 +36,7 @@ const Areas = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.8 }}
-                className="rounded-lg overflow-hidden border border-border hover:border-metallic transition-all duration-300 h-full min-h-[400px]"
+                className="rounded-lg overflow-hidden dark:border-gray-700 border border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 h-full min-h-[400px]"
               >
                 <iframe
                   title="Service Area Map - Torrance CA"
@@ -58,7 +58,7 @@ const Areas = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="p-6 bg-background rounded-lg border border-border hover:border-metallic transition-all duration-300"
+                className="p-6 dark:bg-gray-900 bg-white rounded-lg dark:border-gray-700 border border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300"
               >
                 <h3 className="text-lg font-orbitron font-bold dark:text-white text-black mb-3">
                   Service Coverage
@@ -75,7 +75,7 @@ const Areas = () => {
                     initial={{ opacity: 0, x: 20 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.05 }}
-                    className="flex items-center gap-3 p-3 bg-background rounded-lg border border-border hover:border-metallic transition-all duration-300"
+                    className="flex items-center gap-3 p-3 dark:bg-gray-900 bg-white rounded-lg dark:border-gray-700 border border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300"
                   >
                     <MapPin className="w-5 h-5 dark:text-white text-black flex-shrink-0" />
                     <span className="text-foreground font-medium text-sm">{area}</span>
