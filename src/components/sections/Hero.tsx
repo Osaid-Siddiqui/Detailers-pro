@@ -38,7 +38,7 @@ const Hero = () => {
           className="text-center max-w-4xl mx-auto"
         >
           <motion.h1
-            className="text-5xl md:text-7xl font-orbitron font-bold text-metallic mb-6"
+            className="text-5xl md:text-6xl font-orbitron font-bold dark:text-white text-white mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -72,7 +72,7 @@ const Hero = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-metallic text-primary-foreground hover:bg-metallic/90 font-orbitron text-lg px-8 py-6"
+              className="dark:bg-white dark:text-black dark:hover:bg-gray-200 bg-white text-black hover:bg-gray-100 font-orbitron text-sm px-8 py-6"
             >
               Book Your Detail
             </Button>
