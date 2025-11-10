@@ -6,28 +6,33 @@ import { Card } from "@/components/ui/card";
 const services = [
   {
     icon: Droplets,
-    title: "Interior Detail",
-    description: "Deep cleaning and restoration of your vehicle's interior",
+    title: "Interior Cleaning",
+    description: "Deep cleaning and restoration of your vehicle's interior with premium products",
   },
   {
     icon: Car,
-    title: "Exterior Detail",
-    description: "Premium wash, polish, and protection for your paint",
+    title: "Exterior Cleaning",
+    description: "Professional wash, polish, and protection for your vehicle's exterior paint",
   },
   {
     icon: Sparkles,
     title: "Full Detail",
-    description: "Complete interior and exterior transformation",
+    description: "Complete interior and exterior transformation for your vehicle",
   },
   {
     icon: Wrench,
     title: "Paint Correction",
-    description: "Professional removal of swirls, scratches, and imperfections",
+    description: "Professional removal of swirls, scratches, and paint imperfections",
   },
   {
     icon: Zap,
-    title: "Headlight Restoration",
-    description: "Restore clarity and brightness to oxidized headlights",
+    title: "Headlights Restoration",
+    description: "Restore clarity and brightness to oxidized or cloudy headlights",
+  },
+  {
+    icon: Sparkles,
+    title: "Ceramic Coating",
+    description: "Professional ceramic coating application for long-lasting protection and shine",
   },
 ];
 
