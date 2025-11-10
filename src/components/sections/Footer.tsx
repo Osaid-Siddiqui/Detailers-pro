@@ -15,9 +15,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Pinnacle Auto Spa" className="h-16 w-auto mb-4" />
+            <img src={logo} alt="Detailers Pro" className="h-16 w-auto mb-4" />
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Premium mobile car wash and detailing services in Trinity, NC. We bring luxury
+              Premium mobile car detailing services in Torrance, CA. We bring luxury
               detailing directly to your driveway.
             </p>
           </div>
