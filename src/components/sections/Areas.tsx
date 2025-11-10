@@ -10,12 +10,6 @@ const Areas = () => {
 
   const areas = [
     "Torrance, CA 90504",
-    "Los Angeles, CA",
-    "Long Beach, CA",
-    "Manhattan Beach, CA",
-    "Hermosa Beach, CA",
-    "Redondo Beach, CA",
-    "Inglewood, CA",
   ];
 
   return (
