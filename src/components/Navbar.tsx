@@ -92,7 +92,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo */}
           <button onClick={() => scrollToSection("hero")} className="flex items-center gap-3">
-            <img src={logo} alt="Pinnacle Auto Spa" className="h-16 w-auto" />
+            <img src={logo} alt="Detailers Pro" className="h-16 w-auto" />
           </button>
 
           {/* Desktop Navigation */}
