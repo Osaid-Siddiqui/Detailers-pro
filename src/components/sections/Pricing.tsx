@@ -48,18 +48,18 @@ const Pricing = () => {
   const ceramicCoatingPackage = {
     title: "Ceramic Coating Package",
     prices: [
-      { type: "Coupes", price: "$399" },
-      { type: "SUVs", price: "$449" },
-      { type: "Trucks (3+ Rows)", price: "$499" },
+      { type: "Cars", price: "$1,200" },
+      { type: "SUVs/Trucks", price: "$1,500" },
     ],
     features: [
       "Full Premium Package",
-      "Professional Ceramic Coating",
-      "Paint Protection Warranty",
-      "Enhanced UV Protection",
-      "Water Beading & Hydrophobic",
-      "Long-Lasting Shine",
-      "Professional Application",
+      "Professional Ceramic Coating Application",
+      "Multi-Year Paint Protection Warranty",
+      "Enhanced UV & Environmental Protection",
+      "Water Beading & Hydrophobic Coating",
+      "Long-Lasting High Gloss Shine",
+      "Expert Application & Curing",
+      "Maintenance Guide & Support",
     ],
   };
 
