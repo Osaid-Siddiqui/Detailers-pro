@@ -149,7 +149,7 @@ const Testimonials = () => {
           <div className="flex justify-center gap-4 mt-8">
             <button
               onClick={prevSlide}
-              className="p-3 rounded-full bg-metallic/10 border border-metallic/30 hover:bg-metallic/20 text-metallic transition-all duration-300 hover:shadow-[0_0_20px_rgba(192,192,192,0.3)]"
+              className="p-3 rounded-full dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 bg-gray-100 border border-gray-300 text-black hover:bg-gray-200 transition-all duration-300"
               aria-label="Previous testimonial"
             >
               <ChevronLeft size={24} />
@@ -173,7 +173,7 @@ const Testimonials = () => {
 
             <button
               onClick={nextSlide}
-              className="p-3 rounded-full bg-metallic/10 border border-metallic/30 hover:bg-metallic/20 text-metallic transition-all duration-300 hover:shadow-[0_0_20px_rgba(192,192,212,0.3)]"
+              className="p-3 rounded-full dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 bg-gray-100 border border-gray-300 text-black hover:bg-gray-200 transition-all duration-300"
               aria-label="Next testimonial"
             >
               <ChevronRight size={24} />
