@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import heroImage from "@/assets/hero-bg.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -21,7 +20,7 @@ const Hero = () => {
         <div
           className="absolute inset-0 bg-cover"
           style={{
-            backgroundImage: `url(${heroImage})`,
+            backgroundImage: `url('https://images.pexels.com/photos/6872152/pexels-photo-6872152.jpeg')`,
             backgroundPosition: "center center",
             backgroundAttachment: "fixed"
           }}
@@ -44,7 +43,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            Premium Mobile Car Wash & Detailing
+            Professional Car Detailing & Ceramic Coating
           </motion.h1>
 
           <motion.p
@@ -53,7 +52,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Since 2024
+            Detailer's Pro - Torrance, CA
           </motion.p>
 
           <motion.p
@@ -62,7 +61,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Luxury detailing delivered to your driveway
+            Premium mobile detailing delivered to your driveway with ceramic coating and paint correction services
           </motion.p>
 
           <motion.div
