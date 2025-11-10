@@ -62,26 +62,24 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <a
-                  href="tel:1-800-DETAILERS"
+                  href="tel:+15627468437"
                   className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-metallic transition-all duration-300 group"
                 >
                   <Phone className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
                   <div>
                     <p className="text-sm text-muted-foreground">Call Us</p>
-                    <p className="text-lg font-medium text-foreground">(855) 338-2547 / (310) 555-0123</p>
+                    <p className="text-lg font-medium text-foreground">(562) 746-8437</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:info@detailerspro.com"
+                  href="tel:+13107209427"
                   className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-metallic transition-all duration-300 group"
                 >
-                  <Mail className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
+                  <Phone className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
                   <div>
-                    <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-lg font-medium text-foreground break-all">
-                      info@detailerspro.com
-                    </p>
+                    <p className="text-sm text-muted-foreground">Alternative</p>
+                    <p className="text-lg font-medium text-foreground">(310) 720-9427</p>
                   </div>
                 </a>
               </div>
@@ -92,8 +90,9 @@ const Contact = () => {
                     Address
                   </h4>
                   <p className="text-muted-foreground">
+                    17500 Prairie Ave<br/>
                     Torrance, CA 90504<br/>
-                    Service Area: Greater Los Angeles
+                    <span className="text-sm mt-2 block">Service Area: Torrance, CA</span>
                   </p>
                 </div>
               </div>
