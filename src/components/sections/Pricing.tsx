@@ -80,7 +80,7 @@ const Pricing = () => {
           </p>
         </motion.div>
 
-        <div ref={ref} className="grid md:grid-cols-2 gap-8 mb-12">
+        <div ref={ref} className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Base Package */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
