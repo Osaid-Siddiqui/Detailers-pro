@@ -106,7 +106,7 @@ const About = () => {
             >
               <div className="absolute inset-0 bg-black/70" />
               <div className="relative z-10">
-                <h3 className="text-3xl md:text-4xl font-orbitron font-bold text-metallic mb-12 text-center">
+                <h3 className="text-2xl md:text-3xl font-orbitron font-bold dark:text-white text-white mb-12 text-center">
                   Why Choose Detailer's Pro
                 </h3>
 
@@ -115,66 +115,66 @@ const About = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.7 }}
-                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                    className="dark:bg-gray-900/90 bg-white/90 rounded-lg p-6 dark:border-gray-700 border border-gray-300"
                   >
-                    <Sparkles className="w-10 h-10 text-metallic mb-4" />
-                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Premium Products</h4>
-                    <p className="text-sm text-foreground/70">We use only professional-grade detailing products for superior results</p>
+                    <Sparkles className="w-10 h-10 dark:text-white text-black mb-4" />
+                    <h4 className="text-base font-orbitron font-bold dark:text-white text-black mb-2">Premium Products</h4>
+                    <p className="text-sm dark:text-gray-300 text-gray-700">We use only professional-grade detailing products for superior results</p>
                   </motion.div>
 
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.8 }}
-                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                    className="dark:bg-gray-900/90 bg-white/90 rounded-lg p-6 dark:border-gray-700 border border-gray-300"
                   >
-                    <Award className="w-10 h-10 text-metallic mb-4" />
-                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Expert Team</h4>
-                    <p className="text-sm text-foreground/70">Experienced professionals dedicated to your vehicle's appearance</p>
+                    <Award className="w-10 h-10 dark:text-white text-black mb-4" />
+                    <h4 className="text-base font-orbitron font-bold dark:text-white text-black mb-2">Expert Team</h4>
+                    <p className="text-sm dark:text-gray-300 text-gray-700">Experienced professionals dedicated to your vehicle's appearance</p>
                   </motion.div>
 
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.9 }}
-                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                    className="dark:bg-gray-900/90 bg-white/90 rounded-lg p-6 dark:border-gray-700 border border-gray-300"
                   >
-                    <CheckCircle className="w-10 h-10 text-metallic mb-4" />
-                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Quality Guarantee</h4>
-                    <p className="text-sm text-foreground/70">100% satisfaction guarantee on all our detailing services</p>
+                    <CheckCircle className="w-10 h-10 dark:text-white text-black mb-4" />
+                    <h4 className="text-base font-orbitron font-bold dark:text-white text-black mb-2">Quality Guarantee</h4>
+                    <p className="text-sm dark:text-gray-300 text-gray-700">100% satisfaction guarantee on all our detailing services</p>
                   </motion.div>
 
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 1.0 }}
-                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                    className="dark:bg-gray-900/90 bg-white/90 rounded-lg p-6 dark:border-gray-700 border border-gray-300"
                   >
-                    <Star className="w-10 h-10 text-metallic mb-4" />
-                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Mobile Service</h4>
-                    <p className="text-sm text-foreground/70">We come to your driveway for ultimate convenience and care</p>
+                    <Star className="w-10 h-10 dark:text-white text-black mb-4" />
+                    <h4 className="text-base font-orbitron font-bold dark:text-white text-black mb-2">Mobile Service</h4>
+                    <p className="text-sm dark:text-gray-300 text-gray-700">We come to your driveway for ultimate convenience and care</p>
                   </motion.div>
 
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 1.1 }}
-                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                    className="dark:bg-gray-900/90 bg-white/90 rounded-lg p-6 dark:border-gray-700 border border-gray-300"
                   >
-                    <Wrench className="w-10 h-10 text-metallic mb-4" />
-                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Paint Protection</h4>
-                    <p className="text-sm text-foreground/70">Professional ceramic coating and paint correction services</p>
+                    <Wrench className="w-10 h-10 dark:text-white text-black mb-4" />
+                    <h4 className="text-base font-orbitron font-bold dark:text-white text-black mb-2">Paint Protection</h4>
+                    <p className="text-sm dark:text-gray-300 text-gray-700">Professional ceramic coating and paint correction services</p>
                   </motion.div>
 
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 1.2 }}
-                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                    className="dark:bg-gray-900/90 bg-white/90 rounded-lg p-6 dark:border-gray-700 border border-gray-300"
                   >
-                    <Shield className="w-10 h-10 text-metallic mb-4" />
-                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Local Trusted</h4>
-                    <p className="text-sm text-foreground/70">Serving the Torrance community with integrity and excellence</p>
+                    <Shield className="w-10 h-10 dark:text-white text-black mb-4" />
+                    <h4 className="text-base font-orbitron font-bold dark:text-white text-black mb-2">Local Trusted</h4>
+                    <p className="text-sm dark:text-gray-300 text-gray-700">Serving the Torrance community with integrity and excellence</p>
                   </motion.div>
                 </div>
               </div>
