@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Facebook, Instagram, Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTheme } from "./ThemeProvider";
-import logo from "@/assets/logo.png";
+
+const dpLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='95' fill='none' stroke='%23000' stroke-width='8'/%3E%3Cg fill='%23000'%3E%3Cpath d='M55 75 L55 135 Q55 155 75 155 L85 155 Q105 155 105 135 L105 75 Z M75 95 L85 95 L85 135 Q85 145 75 145 L75 145 Q75 145 75 135 Z'/%3E%3Cpath d='M125 75 L115 75 L115 95 Q115 105 125 105 L135 105 Q145 105 145 95 L145 85 Q145 75 135 75 Z M125 95 L125 85 L135 85 Q135 85 135 95 Q135 105 125 105 L125 105 Q125 105 125 95 Z'/%3E%3C/g%3E%3C/svg%3E";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,50 +39,6 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-40">
-      {/* Top Bar - Hidden when scrolled */}
-      <AnimatePresence>
-        {!isScrolled && (
-          <motion.div
-            initial={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="bg-card border-b border-border overflow-hidden"
-          >
-            <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-              <span className="text-sm font-orbitron font-semibold text-metallic">
-                Detailers Pro
-              </span>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61570825486919"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-metallic transition-colors"
-                >
-                  <Facebook size={20} />
-                </a>
-                <a
-                  href="https://www.instagram.com/pinnacleautospa_/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-metallic transition-colors"
-                >
-                  <Instagram size={20} />
-                </a>
-                <a
-                  href="https://www.tiktok.com/@pinnacleautospa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-metallic transition-colors"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Main Navigation */}
       <div
@@ -92,7 +49,8 @@ const Navbar = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo */}
           <button onClick={() => scrollToSection("hero")} className="flex items-center gap-3">
-            <img src={logo} alt="Detailers Pro" className="h-16 w-auto" />
+            <img src={dpLogo} alt="Detailers Pro" className="h-12 w-12" />
+            <span className="text-lg font-orbitron font-bold text-metallic hidden sm:inline">Detailer's Pro</span>
           </button>
 
           {/* Desktop Navigation */}
