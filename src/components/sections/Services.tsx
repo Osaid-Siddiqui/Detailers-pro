@@ -51,7 +51,7 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-4">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-4">
             Our Services
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -67,9 +67,9 @@ const Services = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="p-8 h-full bg-card border-2 border-metallic/30 hover:border-metallic transition-all duration-300 group relative overflow-hidden before:absolute before:inset-0 before:rounded-lg before:p-[2px] before:bg-gradient-to-r before:from-metallic/50 before:via-metallic/30 before:to-transparent before:opacity-0 group-hover:before:opacity-100 before:transition-opacity before:duration-300 hover:shadow-[0_0_40px_rgba(192,192,192,0.5)]">
-                <service.icon className="w-12 h-12 text-metallic mb-6 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="text-2xl font-orbitron font-semibold text-foreground mb-4">
+              <Card className="p-8 h-full dark:bg-gray-900 bg-white dark:border-2 dark:border-gray-700 border-2 border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 group relative overflow-hidden hover:shadow-lg">
+                <service.icon className="w-12 h-12 dark:text-white text-black mb-6 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="text-xl font-orbitron font-semibold dark:text-white text-black mb-4">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground">{service.description}</p>
