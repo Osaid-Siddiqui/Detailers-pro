@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Shield, Award, Star, CheckCircle } from "lucide-react";
-import aboutImage from "@/assets/about-car.png";
+import { Shield, Award, Star, CheckCircle, Sparkles, Wrench } from "lucide-react";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -20,10 +19,10 @@ const About = () => {
           className="max-w-7xl mx-auto"
         >
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-12 text-center">
-            About Us
+            About Detailer's Pro
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Left Side - Image with Guarantee Badge */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -33,36 +32,36 @@ const About = () => {
             >
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src={aboutImage}
-                  alt="Premium Car Detailing"
-                  className="w-full h-72 object-cover"
+                  src="https://images.pexels.com/photos/6872152/pexels-photo-6872152.jpeg"
+                  alt="Professional Car Detailing"
+                  className="w-full h-96 object-cover"
                 />
-                
-                {/* 100% Guarantee Badge */}
+
+                {/* Quality Badge */}
                 <div className="absolute bottom-4 right-4 bg-metallic text-primary-foreground px-6 py-4 rounded-lg shadow-[0_0_30px_rgba(192,192,192,0.5)] border-2 border-background">
                   <div className="flex items-center gap-3">
                     <Shield className="w-8 h-8" />
                     <div>
-                      <p className="font-orbitron font-bold text-xl">100%</p>
-                      <p className="text-sm font-semibold">Guarantee</p>
+                      <p className="font-orbitron font-bold text-xl">Premium</p>
+                      <p className="text-sm font-semibold">Quality</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Premium Icons */}
+              {/* Key Features Icons */}
               <div className="grid grid-cols-3 gap-4 mt-6">
                 <div className="bg-background/50 backdrop-blur-sm border border-metallic/30 rounded-lg p-4 text-center">
                   <Award className="w-8 h-8 text-metallic mx-auto mb-2" />
-                  <p className="text-sm font-semibold text-foreground">Premium Quality</p>
+                  <p className="text-sm font-semibold text-foreground">Expert Team</p>
                 </div>
                 <div className="bg-background/50 backdrop-blur-sm border border-metallic/30 rounded-lg p-4 text-center">
-                  <Star className="w-8 h-8 text-metallic mx-auto mb-2" />
-                  <p className="text-sm font-semibold text-foreground">Top Rated</p>
+                  <Sparkles className="w-8 h-8 text-metallic mx-auto mb-2" />
+                  <p className="text-sm font-semibold text-foreground">Premium Care</p>
                 </div>
                 <div className="bg-background/50 backdrop-blur-sm border border-metallic/30 rounded-lg p-4 text-center">
                   <CheckCircle className="w-8 h-8 text-metallic mx-auto mb-2" />
-                  <p className="text-sm font-semibold text-foreground">Certified</p>
+                  <p className="text-sm font-semibold text-foreground">Guaranteed</p>
                 </div>
               </div>
             </motion.div>
@@ -75,28 +74,112 @@ const About = () => {
               className="space-y-6 text-foreground/80 text-lg leading-relaxed"
             >
               <p>
-                Detailers Pro is a locally owned mobile detailing business based in Torrance, CA,
-                proudly serving the greater Los Angeles area and surrounding regions.
+                Detailer's Pro is a locally owned and operated mobile detailing business based in Torrance, California. We specialize in professional automotive detailing and ceramic coating services for the local community.
               </p>
 
               <p>
-                With a dedication to precision and professionalism, Detailers Pro delivers
-                high-quality car detailing services directly to your driveway. Whether it's a deep
-                interior cleaning, paint correction, ceramic coating, or full exterior detail, every vehicle receives
-                meticulous care and attention to detail.
+                With a commitment to precision and professionalism, we deliver high-quality car detailing services directly to your driveway. From interior detailing and exterior cleaning to paint correction and ceramic coating, every vehicle receives meticulous care and attention to detail.
               </p>
 
               <p>
-                Built on convenience, consistency, and craftsmanship, Detailers Pro ensures every
-                customer drives away completely satisfied.
+                Our team uses only the finest products and proven techniques to ensure your vehicle receives the premium treatment it deserves. Whether you're looking for a basic wash or a complete detail with ceramic protection, we're here to exceed your expectations.
               </p>
 
               <p className="font-semibold text-metallic">
-                For those seeking honest work, real results, and a trusted mobile detailer,
-                Detailers Pro is your premier choice for automotive excellence.
+                Convenience, consistency, and craftsmanship are the foundation of Detailer's Pro.
               </p>
             </motion.div>
           </div>
+
+          {/* Why Choose Us Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <div className="bg-background rounded-lg p-8 md:p-12 border border-border relative overflow-hidden"
+              style={{
+                backgroundImage: `url('https://images.pexels.com/photos/10463764/pexels-photo-10463764.jpeg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            >
+              <div className="absolute inset-0 bg-black/70" />
+              <div className="relative z-10">
+                <h3 className="text-3xl md:text-4xl font-orbitron font-bold text-metallic mb-12 text-center">
+                  Why Choose Detailer's Pro
+                </h3>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.7 }}
+                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                  >
+                    <Sparkles className="w-10 h-10 text-metallic mb-4" />
+                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Premium Products</h4>
+                    <p className="text-sm text-foreground/70">We use only professional-grade detailing products for superior results</p>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.8 }}
+                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                  >
+                    <Award className="w-10 h-10 text-metallic mb-4" />
+                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Expert Team</h4>
+                    <p className="text-sm text-foreground/70">Experienced professionals dedicated to your vehicle's appearance</p>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.9 }}
+                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                  >
+                    <CheckCircle className="w-10 h-10 text-metallic mb-4" />
+                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Quality Guarantee</h4>
+                    <p className="text-sm text-foreground/70">100% satisfaction guarantee on all our detailing services</p>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 1.0 }}
+                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                  >
+                    <Star className="w-10 h-10 text-metallic mb-4" />
+                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Mobile Service</h4>
+                    <p className="text-sm text-foreground/70">We come to your driveway for ultimate convenience and care</p>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 1.1 }}
+                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                  >
+                    <Wrench className="w-10 h-10 text-metallic mb-4" />
+                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Paint Protection</h4>
+                    <p className="text-sm text-foreground/70">Professional ceramic coating and paint correction services</p>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 1.2 }}
+                    className="bg-card/90 rounded-lg p-6 border border-metallic/30"
+                  >
+                    <Shield className="w-10 h-10 text-metallic mb-4" />
+                    <h4 className="text-lg font-orbitron font-bold text-foreground mb-2">Local Trusted</h4>
+                    <p className="text-sm text-foreground/70">Serving the Torrance community with integrity and excellence</p>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
