@@ -72,7 +72,7 @@ const Pricing = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-4">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-4">
             Pricing
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -87,8 +87,8 @@ const Pricing = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <Card className="p-8 h-full bg-background border-2 border-metallic/30 hover:border-metallic transition-all duration-300 hover:shadow-[0_0_30px_rgba(192,192,192,0.3)]">
-              <h3 className="text-2xl font-orbitron font-bold text-metallic mb-6">
+            <Card className="p-8 h-full dark:bg-gray-900 bg-white dark:border-2 dark:border-gray-700 border-2 border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 hover:shadow-lg">
+              <h3 className="text-xl font-orbitron font-bold dark:text-white text-black mb-6">
                 {basePackage.title}
               </h3>
               
