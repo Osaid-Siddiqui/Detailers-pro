@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Pinnacle Auto Spa Dark Theme - Metallic Silver, Navy Blue, Black */
+    /* Dark Theme - Metallic Silver, Navy Blue, Black */
     --background: 215 30% 4%;
     --foreground: 210 15% 92%;
 
@@ -39,14 +39,54 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    /* Custom colors for Pinnacle */
+    /* Custom colors */
     --metallic: 210 15% 78%;
     --navy: 215 50% 25%;
     --dark-navy: 215 40% 15%;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(215 40% 12%), hsl(215 50% 18%));
     --gradient-shine: linear-gradient(90deg, transparent, hsl(210 15% 78% / 0.1), transparent);
+  }
+
+  .light {
+    /* Light Theme */
+    --background: 210 20% 98%;
+    --foreground: 215 30% 15%;
+
+    --card: 210 15% 92%;
+    --card-foreground: 215 30% 15%;
+
+    --popover: 210 20% 95%;
+    --popover-foreground: 215 30% 15%;
+
+    --primary: 215 30% 20%;
+    --primary-foreground: 210 15% 92%;
+
+    --secondary: 215 40% 35%;
+    --secondary-foreground: 210 15% 92%;
+
+    --muted: 210 15% 50%;
+    --muted-foreground: 215 15% 40%;
+
+    --accent: 215 50% 45%;
+    --accent-foreground: 210 15% 92%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 15% 92%;
+
+    --border: 215 25% 85%;
+    --input: 215 25% 90%;
+    --ring: 215 30% 20%;
+
+    /* Custom colors for light theme */
+    --metallic: 215 30% 25%;
+    --navy: 215 50% 40%;
+    --dark-navy: 215 40% 35%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 40% 40%), hsl(215 50% 50%));
+    --gradient-shine: linear-gradient(90deg, transparent, hsl(215 30% 25% / 0.1), transparent);
   }
 }
 
