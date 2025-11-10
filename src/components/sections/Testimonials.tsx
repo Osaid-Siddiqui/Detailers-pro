@@ -24,8 +24,8 @@ const Testimonials = () => {
     {
       id: 1,
       name: "James Mitchell",
-      service: "Full Detail Package",
-      review: "Detailers Pro absolutely transformed my vehicle! The attention to detail is incredible. My car looks showroom ready and the service was professional and efficient.",
+      service: "Full Detail & Ceramic Coating",
+      review: "Detailer's Pro absolutely transformed my vehicle! The ceramic coating is amazing - water just beads right off. My car looks showroom ready and the team was professional and punctual.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop",
     },
@@ -33,23 +33,23 @@ const Testimonials = () => {
       id: 2,
       name: "Sarah Johnson",
       service: "Paint Correction",
-      review: "I was amazed by how they removed all the swirl marks from my paint. The results are outstanding and have lasted for months. Highly recommend!",
+      review: "I was amazed by how they removed all the swirl marks from my paint. The results are outstanding and have lasted for months. Detailer's Pro is the best in Torrance!",
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=500&fit=crop",
     },
     {
       id: 3,
       name: "Michael Chen",
-      service: "Interior Detail",
-      review: "The interior of my car has never looked better. They cleaned every crevice and my vehicle smells fresh. Worth every penny!",
+      service: "Interior & Headlight Restoration",
+      review: "The interior of my car has never looked better. They cleaned every crevice and my headlights look brand new! Great service and worth every penny!",
       rating: 5,
       image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&h=500&fit=crop",
     },
     {
       id: 4,
       name: "Emma Davis",
-      service: "Premium Package",
-      review: "Outstanding service! The team was punctual, professional, and the results exceeded my expectations. My car looks better than when I bought it!",
+      service: "Exterior Cleaning & Polish",
+      review: "Outstanding service! The team was punctual, professional, and the results exceeded my expectations. My car shines like a mirror. Highly recommend Detailer's Pro!",
       rating: 5,
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&h=500&fit=crop",
     },
@@ -77,7 +77,7 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-4">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-4">
             Customer Reviews
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -121,7 +121,7 @@ const Testimonials = () => {
                       <Star
                         key={i}
                         size={20}
-                        className="text-metallic fill-metallic"
+                        className="dark:text-white dark:fill-white text-black fill-black"
                       />
                     ))}
                   </div>
@@ -133,7 +133,7 @@ const Testimonials = () => {
 
                   {/* Author Info */}
                   <div>
-                    <p className="font-orbitron font-bold text-metallic text-lg">
+                    <p className="font-orbitron font-bold dark:text-white text-black text-base">
                       {currentTestimonial.name}
                     </p>
                     <p className="text-muted-foreground text-sm">
@@ -149,7 +149,7 @@ const Testimonials = () => {
           <div className="flex justify-center gap-4 mt-8">
             <button
               onClick={prevSlide}
-              className="p-3 rounded-full bg-metallic/10 border border-metallic/30 hover:bg-metallic/20 text-metallic transition-all duration-300 hover:shadow-[0_0_20px_rgba(192,192,192,0.3)]"
+              className="p-3 rounded-full dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 bg-gray-100 border border-gray-300 text-black hover:bg-gray-200 transition-all duration-300"
               aria-label="Previous testimonial"
             >
               <ChevronLeft size={24} />
@@ -163,8 +163,8 @@ const Testimonials = () => {
                   onClick={() => setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     index === currentIndex
-                      ? "bg-metallic w-8"
-                      : "bg-metallic/30 hover:bg-metallic/50"
+                      ? "dark:bg-white bg-black w-8"
+                  : "dark:bg-gray-700 bg-gray-300 dark:hover:bg-gray-600 hover:bg-gray-400"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
@@ -173,7 +173,7 @@ const Testimonials = () => {
 
             <button
               onClick={nextSlide}
-              className="p-3 rounded-full bg-metallic/10 border border-metallic/30 hover:bg-metallic/20 text-metallic transition-all duration-300 hover:shadow-[0_0_20px_rgba(192,192,212,0.3)]"
+              className="p-3 rounded-full dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 bg-gray-100 border border-gray-300 text-black hover:bg-gray-200 transition-all duration-300"
               aria-label="Next testimonial"
             >
               <ChevronRight size={24} />

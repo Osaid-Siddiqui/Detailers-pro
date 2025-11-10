@@ -48,18 +48,18 @@ const Pricing = () => {
   const ceramicCoatingPackage = {
     title: "Ceramic Coating Package",
     prices: [
-      { type: "Coupes", price: "$399" },
-      { type: "SUVs", price: "$449" },
-      { type: "Trucks (3+ Rows)", price: "$499" },
+      { type: "Cars", price: "$1,200" },
+      { type: "SUVs/Trucks", price: "$1,500" },
     ],
     features: [
       "Full Premium Package",
-      "Professional Ceramic Coating",
-      "Paint Protection Warranty",
-      "Enhanced UV Protection",
-      "Water Beading & Hydrophobic",
-      "Long-Lasting Shine",
-      "Professional Application",
+      "Professional Ceramic Coating Application",
+      "Multi-Year Paint Protection Warranty",
+      "Enhanced UV & Environmental Protection",
+      "Water Beading & Hydrophobic Coating",
+      "Long-Lasting High Gloss Shine",
+      "Expert Application & Curing",
+      "Maintenance Guide & Support",
     ],
   };
 
@@ -72,7 +72,7 @@ const Pricing = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-4">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-4">
             Pricing
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -87,8 +87,8 @@ const Pricing = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <Card className="p-8 h-full bg-background border-2 border-metallic/30 hover:border-metallic transition-all duration-300 hover:shadow-[0_0_30px_rgba(192,192,192,0.3)]">
-              <h3 className="text-2xl font-orbitron font-bold text-metallic mb-6">
+            <Card className="p-8 h-full dark:bg-gray-900 bg-white dark:border-2 dark:border-gray-700 border-2 border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 hover:shadow-lg">
+              <h3 className="text-xl font-orbitron font-bold dark:text-white text-black mb-6">
                 {basePackage.title}
               </h3>
               
@@ -97,7 +97,7 @@ const Pricing = () => {
                 {basePackage.prices.map((price) => (
                   <div key={price.type} className="flex justify-between items-center">
                     <span className="text-foreground">{price.type}</span>
-                    <span className="text-xl font-orbitron font-bold text-metallic">
+                    <span className="text-lg font-orbitron font-bold dark:text-white text-black">
                       {price.price}
                     </span>
                   </div>
@@ -109,7 +109,7 @@ const Pricing = () => {
                 <ul className="space-y-3">
                   {basePackage.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-metallic flex-shrink-0 mt-0.5" />
+                      <Check className="w-5 h-5 dark:text-white text-black flex-shrink-0 mt-0.5" />
                       <span className="text-foreground/80">{feature}</span>
                     </li>
                   ))}
@@ -126,7 +126,7 @@ const Pricing = () => {
           >
             <Card className="p-8 h-full bg-background border-2 border-metallic hover:shadow-[0_0_40px_rgba(192,192,192,0.4)] transition-all duration-300">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl font-orbitron font-bold text-metallic">
+                <h3 className="text-xl font-orbitron font-bold dark:text-white text-black">
                   {premiumPackage.title}
                 </h3>
                 <span className="text-xs font-semibold px-3 py-1 bg-metallic text-primary-foreground rounded-full">
@@ -139,7 +139,7 @@ const Pricing = () => {
                 {premiumPackage.prices.map((price) => (
                   <div key={price.type} className="flex justify-between items-center">
                     <span className="text-foreground">{price.type}</span>
-                    <span className="text-xl font-orbitron font-bold text-metallic">
+                    <span className="text-lg font-orbitron font-bold dark:text-white text-black">
                       {price.price}
                     </span>
                   </div>
@@ -151,7 +151,7 @@ const Pricing = () => {
                 <ul className="space-y-3">
                   {premiumPackage.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-metallic flex-shrink-0 mt-0.5" />
+                      <Check className="w-5 h-5 dark:text-white text-black flex-shrink-0 mt-0.5" />
                       <span className="text-foreground/80">{feature}</span>
                     </li>
                   ))}
@@ -168,7 +168,7 @@ const Pricing = () => {
           >
             <Card className="p-8 h-full bg-background border-2 border-metallic hover:shadow-[0_0_40px_rgba(192,192,192,0.4)] transition-all duration-300">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl font-orbitron font-bold text-metallic">
+                <h3 className="text-xl font-orbitron font-bold dark:text-white text-black">
                   {ceramicCoatingPackage.title}
                 </h3>
                 <span className="text-xs font-semibold px-3 py-1 bg-metallic text-primary-foreground rounded-full">
@@ -181,7 +181,7 @@ const Pricing = () => {
                 {ceramicCoatingPackage.prices.map((price) => (
                   <div key={price.type} className="flex justify-between items-center">
                     <span className="text-foreground">{price.type}</span>
-                    <span className="text-xl font-orbitron font-bold text-metallic">
+                    <span className="text-lg font-orbitron font-bold dark:text-white text-black">
                       {price.price}
                     </span>
                   </div>
@@ -193,7 +193,7 @@ const Pricing = () => {
                 <ul className="space-y-3">
                   {ceramicCoatingPackage.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-metallic flex-shrink-0 mt-0.5" />
+                      <Check className="w-5 h-5 dark:text-white text-black flex-shrink-0 mt-0.5" />
                       <span className="text-foreground/80">{feature}</span>
                     </li>
                   ))}

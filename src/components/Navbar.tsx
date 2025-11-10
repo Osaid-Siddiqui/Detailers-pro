@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Facebook, Instagram, Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTheme } from "./ThemeProvider";
-import logo from "@/assets/logo.png";
+
+const dpLogoUrl = "https://cdn.builder.io/api/v1/image/assets%2F3c98d4ac468a498ea650d71972550e62%2F5fd8916f422049019c94adbfc4e9b266?format=webp&width=100";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,44 +39,36 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-40">
-      {/* Top Bar - Hidden when scrolled */}
+      {/* Top Info Bar - 1st Layer */}
       <AnimatePresence>
         {!isScrolled && (
           <motion.div
             initial={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="bg-card border-b border-border overflow-hidden"
+            className="dark:bg-black dark:border-b dark:border-gray-800 bg-white border-b border-gray-200 overflow-hidden"
           >
             <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-              <span className="text-sm font-orbitron font-semibold text-metallic">
-                Detailers Pro
+              <span className="text-xs font-medium dark:text-white text-black">
+                Detailer's Pro
               </span>
               <div className="flex gap-4">
                 <a
-                  href="https://www.facebook.com/profile.php?id=61570825486919"
+                  href="https://www.facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-metallic transition-colors"
+                  className="dark:text-gray-400 dark:hover:text-white text-gray-600 hover:text-black transition-colors"
+                  aria-label="Facebook"
                 >
-                  <Facebook size={20} />
+                  <Facebook size={16} />
                 </a>
                 <a
-                  href="https://www.instagram.com/pinnacleautospa_/"
+                  href="https://www.instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-metallic transition-colors"
+                  className="dark:text-gray-400 dark:hover:text-white text-gray-600 hover:text-black transition-colors"
+                  aria-label="Instagram"
                 >
-                  <Instagram size={20} />
-                </a>
-                <a
-                  href="https://www.tiktok.com/@pinnacleautospa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-metallic transition-colors"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-                  </svg>
+                  <Instagram size={16} />
                 </a>
               </div>
             </div>
@@ -85,26 +78,27 @@ const Navbar = () => {
 
       {/* Main Navigation */}
       <div
-        className={`bg-card/85 backdrop-blur-xl border-b border-border/50 transition-all duration-300 ${
+        className={`dark:bg-black dark:border-gray-800 bg-white border-gray-200 backdrop-blur-xl border-b transition-all duration-300 ${
           isScrolled ? "shadow-lg" : ""
         }`}
       >
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          {/* Logo */}
-          <button onClick={() => scrollToSection("hero")} className="flex items-center gap-3">
-            <img src={logo} alt="Detailers Pro" className="h-16 w-auto" />
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+          {/* Logo and Business Name */}
+          <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2">
+            <img src={dpLogoUrl} alt="Detailers Pro" className="h-10 w-10" />
+            <span className="text-sm font-bold dark:text-white text-black hidden sm:inline">Detailer's Pro</span>
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-sm font-medium text-muted-foreground hover:text-metallic transition-colors relative group"
+                className="text-xs font-medium dark:text-gray-400 dark:hover:text-white text-gray-700 hover:text-black transition-colors relative group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-metallic transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 dark:bg-white bg-black transition-all duration-300 group-hover:w-full" />
               </button>
             ))}
           </div>
@@ -115,18 +109,18 @@ const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="text-metallic hover:bg-metallic/10"
+              className="dark:text-white dark:hover:bg-gray-900 text-black hover:bg-gray-100"
               title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
             >
-              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </Button>
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="md:hidden dark:text-white text-black"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X /> : <Menu />}
+              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </Button>
           </div>
         </div>
@@ -138,14 +132,14 @@ const Navbar = () => {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="md:hidden overflow-hidden bg-card border-t border-border"
+              className="md:hidden overflow-hidden dark:bg-black dark:border-gray-800 bg-white border-t border-gray-200"
             >
               <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
                 {navLinks.map((link) => (
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="text-left text-sm font-medium text-muted-foreground hover:text-metallic transition-colors py-2"
+                    className="text-left text-xs font-medium dark:text-gray-400 dark:hover:text-white text-gray-700 hover:text-black transition-colors py-2"
                   >
                     {link.label}
                   </button>

@@ -39,7 +39,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-4">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-4">
             Get In Touch
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -62,45 +62,44 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <a
-                  href="tel:1-800-DETAILERS"
-                  className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-metallic transition-all duration-300 group"
+                  href="tel:+15627468437"
+                  className="flex items-center gap-4 p-4 dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 group rounded-lg"
                 >
-                  <Phone className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
+                  <Phone className="w-6 h-6 dark:text-white text-black group-hover:scale-110 transition-transform" />
                   <div>
                     <p className="text-sm text-muted-foreground">Call Us</p>
-                    <p className="text-lg font-medium text-foreground">(855) 338-2547 / (310) 555-0123</p>
+                    <p className="text-lg font-medium text-foreground">(562) 746-8437</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:info@detailerspro.com"
-                  className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-metallic transition-all duration-300 group"
+                  href="tel:+13107209427"
+                  className="flex items-center gap-4 p-4 dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 group rounded-lg"
                 >
-                  <Mail className="w-6 h-6 text-metallic group-hover:scale-110 transition-transform" />
+                  <Phone className="w-6 h-6 dark:text-white text-black group-hover:scale-110 transition-transform" />
                   <div>
-                    <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="text-lg font-medium text-foreground break-all">
-                      info@detailerspro.com
-                    </p>
+                    <p className="text-sm text-muted-foreground">Alternative</p>
+                    <p className="text-lg font-medium text-foreground">(310) 720-9427</p>
                   </div>
                 </a>
               </div>
 
-              <div className="mt-6 p-6 bg-card rounded-lg border border-border space-y-4">
+              <div className="mt-6 p-6 dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 rounded-lg space-y-4">
                 <div>
-                  <h4 className="font-orbitron font-semibold text-metallic mb-2">
+                  <h4 className="font-orbitron font-semibold dark:text-white text-black mb-2">
                     Address
                   </h4>
                   <p className="text-muted-foreground">
+                    17500 Prairie Ave<br/>
                     Torrance, CA 90504<br/>
-                    Service Area: Greater Los Angeles
+                    <span className="text-sm mt-2 block">Service Area: Torrance, CA</span>
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="p-6 bg-card rounded-lg border border-border">
-              <h4 className="font-orbitron font-semibold text-metallic mb-4">
+            <div className="p-6 dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 rounded-lg">
+              <h4 className="font-orbitron font-semibold dark:text-white text-black mb-4">
                 Business Hours
               </h4>
               <div className="space-y-2 text-muted-foreground">
@@ -124,7 +123,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="bg-card border-border focus:border-metallic"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:placeholder-gray-500 dark:focus:border-white bg-white border-gray-300 text-black placeholder-gray-500 focus:border-black"
                 />
               </div>
 
@@ -135,7 +134,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
-                  className="bg-card border-border focus:border-metallic"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:focus:border-white bg-white border-gray-300 focus:border-black"
                 />
               </div>
 
@@ -145,7 +144,7 @@ const Contact = () => {
                   value={formData.carType}
                   onChange={(e) => setFormData({ ...formData, carType: e.target.value })}
                   required
-                  className="bg-card border-border focus:border-metallic"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:focus:border-white bg-white border-gray-300 focus:border-black"
                 />
               </div>
 
@@ -155,7 +154,7 @@ const Contact = () => {
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   required
-                  className="bg-card border-border focus:border-metallic"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:focus:border-white bg-white border-gray-300 focus:border-black"
                 />
               </div>
 
@@ -165,14 +164,14 @@ const Contact = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   rows={4}
-                  className="bg-card border-border focus:border-metallic resize-none"
+                  className="dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:placeholder-gray-500 dark:focus:border-white bg-white border-gray-300 text-black placeholder-gray-500 focus:border-black resize-none"
                 />
               </div>
 
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-metallic text-primary-foreground hover:bg-metallic/90 font-orbitron"
+                className="w-full dark:bg-white dark:text-black dark:hover:bg-gray-200 bg-black text-white hover:bg-gray-800 font-orbitron"
               >
                 Send Message
               </Button>

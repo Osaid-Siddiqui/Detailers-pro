@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import heroImage from "@/assets/hero-bg.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -21,7 +20,7 @@ const Hero = () => {
         <div
           className="absolute inset-0 bg-cover"
           style={{
-            backgroundImage: `url(${heroImage})`,
+            backgroundImage: `url('https://images.pexels.com/photos/6872152/pexels-photo-6872152.jpeg')`,
             backgroundPosition: "center center",
             backgroundAttachment: "fixed"
           }}
@@ -39,12 +38,12 @@ const Hero = () => {
           className="text-center max-w-4xl mx-auto"
         >
           <motion.h1
-            className="text-5xl md:text-7xl font-orbitron font-bold text-metallic mb-6"
+            className="text-5xl md:text-6xl font-orbitron font-bold dark:text-white text-white mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            Premium Mobile Car Wash & Detailing
+            Professional Car Detailing & Ceramic Coating
           </motion.h1>
 
           <motion.p
@@ -53,7 +52,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Since 2024
+            Detailer's Pro - Torrance, CA
           </motion.p>
 
           <motion.p
@@ -62,7 +61,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Luxury detailing delivered to your driveway
+            Premium mobile detailing delivered to your driveway with ceramic coating and paint correction services
           </motion.p>
 
           <motion.div
@@ -73,7 +72,7 @@ const Hero = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-metallic text-primary-foreground hover:bg-metallic/90 font-orbitron text-lg px-8 py-6"
+              className="dark:bg-white dark:text-black dark:hover:bg-gray-200 bg-white text-black hover:bg-gray-100 font-orbitron text-sm px-8 py-6"
             >
               Book Your Detail
             </Button>
@@ -87,7 +86,7 @@ const Hero = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <ChevronDown className="text-metallic" size={32} />
+        <ChevronDown className="dark:text-white text-white" size={32} />
       </motion.div>
     </section>
   );
