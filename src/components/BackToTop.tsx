@@ -34,7 +34,7 @@ const BackToTop = () => {
           <Button
             onClick={scrollToTop}
             size="icon"
-            className="bg-metallic text-primary-foreground hover:bg-metallic/90 rounded-full w-12 h-12 shadow-lg"
+            className="dark:bg-white dark:text-black dark:hover:bg-gray-200 bg-black text-white hover:bg-gray-800 rounded-full w-12 h-12 shadow-lg"
           >
             <ArrowUp size={20} />
           </Button>
