@@ -1,5 +1,4 @@
-import { Facebook, Instagram, Music2 } from "lucide-react";
-import logo from "@/assets/logo.png";
+const dpLogo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='95' fill='none' stroke='%23000' stroke-width='8'/%3E%3Cg fill='%23000'%3E%3Cpath d='M55 75 L55 135 Q55 155 75 155 L85 155 Q105 155 105 135 L105 75 Z M75 95 L85 95 L85 135 Q85 145 75 145 L75 145 Q75 145 75 135 Z'/%3E%3Cpath d='M125 75 L115 75 L115 95 Q115 105 125 105 L135 105 Q145 105 145 95 L145 85 Q145 75 135 75 Z M125 95 L125 85 L135 85 Q135 85 135 95 Q135 105 125 105 L125 105 Q125 105 125 95 Z'/%3E%3C/g%3E%3C/svg%3E";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -15,10 +14,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Detailers Pro" className="h-16 w-auto mb-4" />
+            <div className="flex items-center gap-2 mb-4">
+              <img src={dpLogo} alt="Detailer's Pro" className="h-12 w-12" />
+              <h3 className="font-orbitron font-bold text-metallic text-lg">Detailer's Pro</h3>
+            </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Premium mobile car detailing services in Torrance, CA. We bring luxury
-              detailing directly to your driveway.
+              Premium mobile car detailing, ceramic coating, and paint correction services in Torrance, CA.
             </p>
           </div>
 
@@ -101,54 +102,29 @@ const Footer = () => {
             <h3 className="font-orbitron font-bold text-metallic mb-4 text-lg">Contact Us</h3>
             <ul className="space-y-3 text-muted-foreground text-sm">
               <li>
-                <p className="font-semibold text-foreground">Phone</p>
+                <p className="font-semibold text-foreground">Primary</p>
                 <a
-                  href="tel:1-800-DETAILERS"
+                  href="tel:+15627468437"
                   className="hover:text-metallic transition-colors"
                 >
-                  (855) 338-2547
+                  (562) 746-8437
                 </a>
               </li>
               <li>
-                <p className="font-semibold text-foreground">Email</p>
+                <p className="font-semibold text-foreground">Alternative</p>
                 <a
-                  href="mailto:info@detailerspro.com"
-                  className="hover:text-metallic transition-colors break-all"
+                  href="tel:+13107209427"
+                  className="hover:text-metallic transition-colors"
                 >
-                  info@detailerspro.com
+                  (310) 720-9427
                 </a>
               </li>
               <li>
-                <p className="font-semibold text-foreground mb-2">Follow Us</p>
-                <div className="flex gap-3">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61570825486919"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-metallic transition-colors"
-                    aria-label="Facebook"
-                  >
-                    <Facebook size={20} />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/pinnacleautospa/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-metallic transition-colors"
-                    aria-label="Instagram"
-                  >
-                    <Instagram size={20} />
-                  </a>
-                  <a
-                    href="https://www.tiktok.com/@pinnacleautospa"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-metallic transition-colors"
-                    aria-label="TikTok"
-                  >
-                    <Music2 size={20} />
-                  </a>
-                </div>
+                <p className="font-semibold text-foreground">Address</p>
+                <p className="text-muted-foreground">
+                  17500 Prairie Ave<br/>
+                  Torrance, CA 90504
+                </p>
               </li>
             </ul>
           </div>
