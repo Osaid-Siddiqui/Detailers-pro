@@ -9,13 +9,13 @@ const Areas = () => {
   });
 
   const areas = [
-    "Archdale, NC",
-    "Greensboro, NC",
-    "Thomasville, NC",
-    "High Point, NC",
-    "Asheboro, NC",
-    "Trinity, NC",
-    "Lexington, NC",
+    "Torrance, CA 90504",
+    "Los Angeles, CA",
+    "Long Beach, CA",
+    "Manhattan Beach, CA",
+    "Hermosa Beach, CA",
+    "Redondo Beach, CA",
+    "Inglewood, CA",
   ];
 
   return (
