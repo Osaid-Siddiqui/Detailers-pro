@@ -22,7 +22,7 @@ const Areas = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-5xl mx-auto"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-8">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-8">
             Service Area
           </h2>
           <p className="text-muted-foreground text-lg mb-12">
@@ -60,7 +60,7 @@ const Areas = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="p-6 bg-background rounded-lg border border-border hover:border-metallic transition-all duration-300"
               >
-                <h3 className="text-xl font-orbitron font-bold text-metallic mb-3">
+                <h3 className="text-lg font-orbitron font-bold dark:text-white text-black mb-3">
                   Service Coverage
                 </h3>
                 <p className="text-foreground/80 text-sm leading-relaxed">
@@ -77,7 +77,7 @@ const Areas = () => {
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.05 }}
                     className="flex items-center gap-3 p-3 bg-background rounded-lg border border-border hover:border-metallic transition-all duration-300"
                   >
-                    <MapPin className="w-5 h-5 text-metallic flex-shrink-0" />
+                    <MapPin className="w-5 h-5 dark:text-white text-black flex-shrink-0" />
                     <span className="text-foreground font-medium text-sm">{area}</span>
                   </motion.div>
                 ))}

@@ -86,7 +86,7 @@ const Hero = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <ChevronDown className="text-metallic" size={32} />
+        <ChevronDown className="dark:text-white text-white" size={32} />
       </motion.div>
     </section>
   );

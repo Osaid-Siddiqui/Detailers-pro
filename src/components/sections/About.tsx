@@ -85,7 +85,7 @@ const About = () => {
                 Our team uses only the finest products and proven techniques to ensure your vehicle receives the premium treatment it deserves. Whether you're looking for a basic wash or a complete detail with ceramic protection, we're here to exceed your expectations.
               </p>
 
-              <p className="font-semibold text-metallic">
+              <p className="font-semibold dark:text-gray-300 text-gray-700">
                 Convenience, consistency, and craftsmanship are the foundation of Detailer's Pro.
               </p>
             </motion.div>
