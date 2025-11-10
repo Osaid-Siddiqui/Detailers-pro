@@ -58,7 +58,7 @@ const Gallery = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="rounded-lg overflow-hidden bg-card border border-border hover:border-metallic transition-all duration-300 group"
+              className="rounded-lg overflow-hidden dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 dark:hover:border-white hover:border-black transition-all duration-300 group"
             >
               <div className="relative h-80 overflow-hidden">
                 <img
