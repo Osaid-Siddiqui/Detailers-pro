@@ -32,6 +32,7 @@ const Index = () => {
           <Pricing />
           <Gallery />
           <Areas />
+          <Testimonials />
           <Contact />
           <Footer />
           <BackToTop />
