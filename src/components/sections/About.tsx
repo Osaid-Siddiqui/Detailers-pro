@@ -75,26 +75,25 @@ const About = () => {
               className="space-y-6 text-foreground/80 text-lg leading-relaxed"
             >
               <p>
-                Pinnacle Auto Spa is a locally owned mobile detailing business based in Trinity, NC,
-                proudly serving Archdale, High Point, Thomasville, Asheboro, Greensboro, Lexington,
-                and surrounding areas.
+                Detailers Pro is a locally owned mobile detailing business based in Torrance, CA,
+                proudly serving the greater Los Angeles area and surrounding regions.
               </p>
 
               <p>
-                With a dedication to precision and professionalism, Pinnacle Auto Spa delivers
+                With a dedication to precision and professionalism, Detailers Pro delivers
                 high-quality car detailing services directly to your driveway. Whether it's a deep
-                interior cleaning, paint correction, or full exterior detail, every vehicle receives
+                interior cleaning, paint correction, ceramic coating, or full exterior detail, every vehicle receives
                 meticulous care and attention to detail.
               </p>
 
               <p>
-                Built on convenience, consistency, and craftsmanship, Pinnacle Auto Spa ensures every
+                Built on convenience, consistency, and craftsmanship, Detailers Pro ensures every
                 customer drives away completely satisfied.
               </p>
 
               <p className="font-semibold text-metallic">
-                For those seeking honest work, real results, and a trusted mobile detailer in the
-                Triad area, Pinnacle Auto Spa is proud to be Randolph County's premier choice.
+                For those seeking honest work, real results, and a trusted mobile detailer,
+                Detailers Pro is your premier choice for automotive excellence.
               </p>
             </motion.div>
           </div>
