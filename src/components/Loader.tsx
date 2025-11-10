@@ -38,7 +38,7 @@ const Loader = ({ onComplete }: LoaderProps) => {
       <div className="w-full max-w-md px-8">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-orbitron font-bold text-metallic mb-2">
-            PINNACLE AUTO SPA
+            DETAILERS PRO
           </h2>
           <p className="text-muted-foreground text-sm">Premium Detailing</p>
         </div>
