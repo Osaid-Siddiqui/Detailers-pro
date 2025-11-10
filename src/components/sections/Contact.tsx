@@ -98,8 +98,8 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="p-6 bg-card rounded-lg border border-border">
-              <h4 className="font-orbitron font-semibold text-metallic mb-4">
+            <div className="p-6 dark:bg-gray-900 bg-white dark:border-gray-700 border border-gray-300 rounded-lg">
+              <h4 className="font-orbitron font-semibold dark:text-white text-black mb-4">
                 Business Hours
               </h4>
               <div className="space-y-2 text-muted-foreground">
