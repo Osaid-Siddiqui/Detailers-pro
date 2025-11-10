@@ -26,7 +26,7 @@ const Hero = () => {
             backgroundAttachment: "fixed"
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-background" />
         <div className="absolute inset-0 gradient-shine animate-shine opacity-30" />
       </div>
 
