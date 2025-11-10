@@ -18,7 +18,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-metallic mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-orbitron font-bold dark:text-white text-black mb-12 text-center">
             About Detailer's Pro
           </h2>
 
@@ -38,12 +38,12 @@ const About = () => {
                 />
 
                 {/* Quality Badge */}
-                <div className="absolute bottom-4 right-4 bg-metallic text-primary-foreground px-6 py-4 rounded-lg shadow-[0_0_30px_rgba(192,192,192,0.5)] border-2 border-background">
+                <div className="absolute bottom-4 right-4 dark:bg-white dark:text-black bg-white text-black px-6 py-4 rounded-lg shadow-lg border-2 border-background">
                   <div className="flex items-center gap-3">
                     <Shield className="w-8 h-8" />
                     <div>
-                      <p className="font-orbitron font-bold text-xl">Premium</p>
-                      <p className="text-sm font-semibold">Quality</p>
+                      <p className="font-orbitron font-bold text-base">Premium</p>
+                      <p className="text-xs font-semibold">Quality</p>
                     </div>
                   </div>
                 </div>
@@ -51,17 +51,17 @@ const About = () => {
 
               {/* Key Features Icons */}
               <div className="grid grid-cols-3 gap-4 mt-6">
-                <div className="bg-background/50 backdrop-blur-sm border border-metallic/30 rounded-lg p-4 text-center">
-                  <Award className="w-8 h-8 text-metallic mx-auto mb-2" />
-                  <p className="text-sm font-semibold text-foreground">Expert Team</p>
+                <div className="dark:bg-gray-900 bg-gray-100 backdrop-blur-sm dark:border-gray-700 border border-gray-300 rounded-lg p-4 text-center">
+                  <Award className="w-8 h-8 dark:text-white text-black mx-auto mb-2" />
+                  <p className="text-xs font-semibold dark:text-white text-black">Expert Team</p>
                 </div>
-                <div className="bg-background/50 backdrop-blur-sm border border-metallic/30 rounded-lg p-4 text-center">
-                  <Sparkles className="w-8 h-8 text-metallic mx-auto mb-2" />
-                  <p className="text-sm font-semibold text-foreground">Premium Care</p>
+                <div className="dark:bg-gray-900 bg-gray-100 backdrop-blur-sm dark:border-gray-700 border border-gray-300 rounded-lg p-4 text-center">
+                  <Sparkles className="w-8 h-8 dark:text-white text-black mx-auto mb-2" />
+                  <p className="text-xs font-semibold dark:text-white text-black">Premium Care</p>
                 </div>
-                <div className="bg-background/50 backdrop-blur-sm border border-metallic/30 rounded-lg p-4 text-center">
-                  <CheckCircle className="w-8 h-8 text-metallic mx-auto mb-2" />
-                  <p className="text-sm font-semibold text-foreground">Guaranteed</p>
+                <div className="dark:bg-gray-900 bg-gray-100 backdrop-blur-sm dark:border-gray-700 border border-gray-300 rounded-lg p-4 text-center">
+                  <CheckCircle className="w-8 h-8 dark:text-white text-black mx-auto mb-2" />
+                  <p className="text-xs font-semibold dark:text-white text-black">Guaranteed</p>
                 </div>
               </div>
             </motion.div>
